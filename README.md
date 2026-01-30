@@ -22,5 +22,8 @@ Un formulaire complexe et stylisé pour une application financière, travaillant
 ### [04 - News Clone](./04-news-clone)
 Reproduction d'une page d'actualités (type blog ou journal), utilisant probablement CSS Grid pour la mise en page.
 
+### [Coffee Landing Page](./coffe-landingpage)
+Une landing page premium pour une marque de café, avec un design full-screen et des effets modernes.
+
 ---
 *Ce dépôt témoigne de ma progression et de ma capacité à délivrer des interfaces propres et modernes en temps limité.*
