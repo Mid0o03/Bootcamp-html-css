@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Kitchen Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <aside class="sidebar">
+            <div class="sidebar-logo">🍳 DarkKitchen</div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#">🏠 Dashboard</a></li>
+                    <li><a href="#">📦 Orders</a></li>
+                    <li><a href="#">📜 Menu</a></li>
+                    <li><a href="#">📊 Analytics</a></li>
+                    <li><a href="#">⚙️ Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <header class="header">
+            <div class="search-bar">
+                <input type="text" placeholder="Rechercher une commande...">
+            </div>
+            <div class="user-profile">
+                <span class="user-status">Chef en ligne</span>
+                <img src="https://via.placeholder.com/40" alt="Avatar" class="avatar-small">
+            </div>
+        </header>
+
+        <section class="order">
+            <div class="order-header">
+                <h2>Commandes en cours</h2>
+                <span class="badge">12 actives</span>
+            </div>
+            <div class="order-content">
+                <div class="order-row">
+                    <span class="order-id">#ORD-4589</span>
+                    <span class="order-item">2x Ramen Shoyu</span>
+                    <span class="status status-cooking">En cuisine</span>
+                    <span class="price">24.00€</span>
+                </div>
+                <div class="order-row">
+                    <span class="order-id">#ORD-4590</span>
+                    <span class="order-item">1x Gyoza Mix</span>
+                    <span class="status status-ready">Prêt</span>
+                    <span class="price">12.50€</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu">
+            <h3>Top Menu</h3>
+            <div class="menu-content">
+                <div class="menu-item">
+                    <div class="item-img">🍜</div>
+                    <div class="item-info">
+                        <p class="item-name">Ramen</p>
+                        <p class="item-price">12€</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-img">🥟</div>
+                    <div class="item-info">
+                        <p class="item-name">Gyoza</p>
+                        <p class="item-price">8€</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <h3>Performances</h3>
+            <div class="stats-content">
+                <div class="stat-card">
+                    <p class="stat-label">Revenus</p>
+                    <p class="stat-value">1,240€</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-label">Temps moyen</p>
+                    <p class="stat-value">14 min</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+</html>
