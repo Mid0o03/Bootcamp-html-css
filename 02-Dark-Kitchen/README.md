@@ -22,4 +22,4 @@ A modern, responsive dashboard interface designed for managing a dark kitchen op
 
 ## 📸 Preview
 
-*(Add a screenshot here if available)*
+![Dark Kitchen Dashboard Preview](project-preview.png)
