@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fintech Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="fintech-form">
+            <h2>Ouvrez votre compte Pro</h2>
+
+            <fieldset>
+                <legend>Informations personnelles</legend>
+                <div class="input-group">
+                    <label for="full-name">Nom complet</label>
+                    <input type="text" id="full-name" required placeholder="Morgan Oakley">
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" required placeholder="morgan.oakley@hub.com">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend> Votre activité</legend>
+                <select id="role">
+                    <option value="freelance">Freelance / Indépendant</option>
+                    <option value="saas">Fondateur de MicroSaas</option>
+                    <option value="student">Étudiant en reconversion</option>
+                </select>
+            </fieldset>
+            <button type="submit" class="btn-submit">Créer mon compte</button>
+        </form>
+
+        <aside class="form-help">
+            <h3>Pourquoi nous choisir ?</h3>
+            <p>Rejoignez 10,000+ développeurs qui gèrent leurs finances en toute simplicité.</p>
+        </aside>
+    </div>
+
+</body>
+
+</html>

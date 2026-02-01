@@ -1,0 +1,167 @@
+/* AJOUT: Reset global pour éviter les problèmes de dimensions */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* MODIFICATION: Police plus moderne et fond de page plus doux */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f3f4f6;
+    /* Gris très clair pour le fond */
+    color: #1f2937;
+    /* Couleur de texte gris foncé, moins agressif que le noir pur */
+    height: 100vh;
+}
+
+/* MODIFICATION: Amélioration de la structure de la grille et centrage */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    grid-template-areas: "fintech-form form-help";
+    gap: 40px;
+    /* Plus d'espace entre les éléments */
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 20px;
+    align-items: center;
+}
+
+/* MODIFICATION: Style "Carte" pour le formulaire : blanc, ombre douce, coins arrondis */
+.fintech-form {
+    grid-area: fintech-form;
+    background-color: #ffffff;
+    border: none;
+    /* On remplace la bordure simple par une ombre */
+    border-radius: 16px;
+    padding: 40px;
+    /* AJOUT: Une ombre portée douce pour donner de la profondeur */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.fintech-form h2 {
+    margin-bottom: 32px;
+    font-weight: 700;
+    color: #111827;
+    text-align: center;
+}
+
+/* MODIFICATION: Reset des fieldsets pour une mise en page plus fluide */
+fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+legend {
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #6b7280;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    width: 100%;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 8px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    /* Espace vertical entre le label et l'input */
+    width: 100%;
+}
+
+label {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #374151;
+}
+
+/* AJOUT: Styles améliorés pour les champs de saisie (inputs et selects) */
+input,
+select {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    background-color: #f9fafb;
+}
+
+/* AJOUT: Effet de focus "Fintech blue" pour l'accessibilité et le style */
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #0052ff;
+    /* Ombre diffuse bleue au focus */
+    box-shadow: 0 0 0 3px rgba(0, 82, 255, 0.15);
+    background-color: #ffffff;
+}
+
+input:invalid {
+    border-color: #ef4444;
+    /* Rouge plus moderne */
+}
+
+/* AJOUT: Style du bouton d'action principal */
+.btn-submit {
+    background-color: #0052ff;
+    color: white;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+    width: 100%;
+    /* Bouton pleine largeur */
+}
+
+.btn-submit:hover {
+    background-color: #0040c7;
+    /* Bleu un peu plus foncé au survol */
+}
+
+/* MODIFICATION: Aside (aide) plus distinct pour le contraste */
+.form-help {
+    grid-area: form-help;
+    background-color: #1f2937;
+    /* Fond sombre "Slate" au lieu de lightgray */
+    color: #ffffff;
+    border: none;
+    border-radius: 16px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* Alignement texte à gauche pour la lisibilité */
+    height: fit-content;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.form-help h3 {
+    margin-bottom: 16px;
+    font-size: 1.25rem;
+    color: #ffffff;
+}
+
+.form-help p {
+    color: #9ca3af;
+    /* Texte gris clair pour la lisibilité sur fond sombre */
+    line-height: 1.6;
+    margin: 0;
+}
