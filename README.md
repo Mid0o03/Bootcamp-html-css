@@ -20,7 +20,8 @@ Site web pour une "Dark Kitchen", focalisé sur la mise en page et l'ambiance vi
 Un formulaire complexe et stylisé pour une application financière, travaillant les inputs et l'UX.
 
 ### [04 - News Clone](./04-news-clone)
-Reproduction d'une page d'actualités (type blog ou journal), utilisant probablement CSS Grid pour la mise en page.
+Reproduction modernisée d'une page d'accueil de site d'actualités.
+**Concepts clés** : CSS Grid, Template Areas, CSS Variables, Sticky Header.
 
 ### [1.5 - Coffee Landing Page](./1.5-coffe-landingpage)
 Une landing page premium pour une marque de café, avec un design full-screen et des effets modernes.
